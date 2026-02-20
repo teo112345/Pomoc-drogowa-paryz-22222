@@ -1,12 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".nav");
+// MENU MOBILE ☰
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav');
 
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("open");
-      const open = nav.classList.contains("open");
-      toggle.setAttribute("aria-expanded", open);
-    });
-  }
-});
+if (menuBtn && nav) {
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('is-open');
+    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !expanded);
+  });
+}
+
+// Année automatique footer
+const year = document.getElementById('year');
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
