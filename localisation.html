@@ -6,14 +6,16 @@
   <title>Lokalizacja – Pomoc Drogowa Paryż</title>
   <meta name="description" content="Siedziba w Île-de-France (okolice Paryża). Transport samochodów na terenie całej Francji. Kontakt WhatsApp." />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-<script src="script.js"></script>
+
 <header class="topbar">
   <div class="container topbar__row">
     <a class="brand" href="index.html" aria-label="Pomoc Drogowa Paryż">
       <div class="brand__logo" aria-hidden="true">
-        <img src="assets/img/logo.png" alt="Pomoc Drogowa Paryż">
+        <img src="assets/img/logo.png" alt="Pomoc Drogowa Paryż" width="48" height="48" loading="eager">
         <span class="brand__fallback">PD</span>
       </div>
       <div class="brand__text">
@@ -21,13 +23,14 @@
         <span>Île-de-France • Transport w całej Francji</span>
       </div>
     </a>
-<button class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
 
-<nav class="nav">
-  <a class="nav__link nav__link--active" href="index.html">O nas</a>
-  <a class="nav__link" href="localisation.html">Lokalizacja</a>
-  <a class="nav__link nav__cta" href="contact.html">Kontakt</a>
-</nav>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+
+    <nav class="nav" id="primary-nav">
+      <a class="nav__link" href="index.html">O nas</a>
+      <a class="nav__link nav__link--active" href="localisation.html">Lokalizacja</a>
+      <a class="nav__link nav__cta" href="contact.html">Kontakt</a>
+    </nav>
   </div>
 </header>
 
@@ -63,7 +66,9 @@
       <div class="card">
         <h2>Mapa</h2>
         <p class="muted">Otwórz orientacyjnie w Google Maps (Île-de-France).</p>
-        <a class="btn btn--ghost btn--block" href="https://www.google.com/maps/search/?api=1&query=%C3%8Ele-de-France%2C%20France" target="_blank" rel="noopener">
+        <a class="btn btn--ghost btn--block"
+           href="https://www.google.com/maps/search/?api=1&query=%C3%8Ele-de-France%2C%20France"
+           target="_blank" rel="noopener">
           Otwórz w Google Maps
         </a>
         <p class="muted" style="margin-top:12px;">
