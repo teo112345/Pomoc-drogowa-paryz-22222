@@ -1,17 +1,18 @@
 // MENU MOBILE ☰
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.querySelector(".nav");
 
-if (menuBtn && nav) {
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('is-open');
-    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-    menuBtn.setAttribute('aria-expanded', !expanded);
-  });
-}
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("nav--open");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
 
-// Année automatique footer
-const year = document.getElementById('year');
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+  // Année automatique footer
+  const year = document.getElementById("year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+});
