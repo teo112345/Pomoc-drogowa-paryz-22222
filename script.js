@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (menuBtn && nav) {
     menuBtn.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("nav--open");
-      menuBtn.setAttribute("aria-expanded", String(isOpen));
+      nav.classList.toggle("is-open");
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", String(!expanded));
     });
   }
 
-  // Année automatique footer
+  // Année automatique footer (si tu ajoutes <span id="year"></span>)
   const year = document.getElementById("year");
   if (year) {
     year.textContent = new Date().getFullYear();
