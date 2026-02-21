@@ -3,17 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Kontakt – Pomoc Drogowa Paryż</title>
-  <meta name="description" content="Kontakt WhatsApp: +33 7 59 55 72 33" />
+  <meta name="description" content="Kontakt WhatsApp: +33 7 59 55 72 33. Pomoc drogowa i transport samochodów – Île-de-France i cała Francja." />
+
+  <link rel="canonical" href="https://twojadomena.fr/contact.html" />
+
+  <meta property="og:title" content="Kontakt – Pomoc Drogowa Paryż" />
+  <meta property="og:description" content="WhatsApp i telefon. Szybka pomoc drogowa i transport aut – Île-de-France + cała Francja." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://twojadomena.fr/contact.html" />
+
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
+
 <header class="topbar">
   <div class="container topbar__row">
     <a class="brand" href="index.html" aria-label="Pomoc Drogowa Paryż">
       <div class="brand__logo" aria-hidden="true">
-        <img src="assets/img/logo.png" alt="Pomoc Drogowa Paryż">
+        <img src="assets/img/logo.png" alt="Pomoc Drogowa Paryż" width="48" height="48" loading="eager">
         <span class="brand__fallback">PD</span>
       </div>
       <div class="brand__text">
@@ -21,47 +32,59 @@
         <span>Île-de-France • Transport w całej Francji</span>
       </div>
     </a>
-    <button class="menu-btn" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
     </button>
-    <nav class="nav">
-  <a class="nav__link" href="index.html">O nas</a>
-  <a class="nav__link" href="localisation.html">Lokalizacja</a>
-  <a class="nav__link nav__cta nav__link--active" href="contact.html">Kontakt</a>
-</nav>
+
+    <nav class="nav" id="primary-nav">
+      <a class="nav__link" href="index.html">O nas</a>
+      <a class="nav__link" href="localisation.html">Lokalizacja</a>
+      <a class="nav__link nav__cta nav__link--active" href="contact.html">Kontakt</a>
+    </nav>
   </div>
 </header>
+
 <main>
   <section class="pagehead">
     <div class="container">
       <div class="pill">Kontakt</div>
       <h1>Napisz do nas — odpowiadamy szybko</h1>
-      <p class="lead">Najprościej: WhatsApp. Możesz też wysłać SMS.</p>
+      <p class="lead">
+        Pomoc drogowa i transport samochodów. Najszybciej przez WhatsApp — wycena przed usługą.
+      </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container grid2">
+
+      <!-- WHATSAPP -->
       <div class="card card--glow">
         <h2>WhatsApp</h2>
-        <p class="muted">Kliknij i wyślij gotową wiadomość.</p>
+        <p class="muted">
+          Najszybszy kontakt. Kliknij i wyślij gotową wiadomość — odpowiadamy tak szybko, jak to możliwe.
+        </p>
 
         <a class="btn btn--wa btn--block"
-           href="https://wa.me/33759557233?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20drogowej%2Ftransportu.%20Jestem%20w%3A%20(miasto%2Fadres).%20Auto%3A%20(marka%2Fmodel).%20Problem%3A%20(opisz).%20Czy%20auto%20odpala%3F%20(tak%2Fnie)."
+           href="https://wa.me/33759557233?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20drogowej.%0A%0ALokalizacja%3A%20%0AAuto%20(marka%2Fmodel)%3A%20%0ATyp%20pojazdu%20(osobowe%2Fdostawcze)%3A%20%0AProblem%3A%20%0ACzy%20auto%20odpala%3A%20tak%2Fnie%0ADok%C4%85d%20transport%3A%20(je%C5%9Bli%20dotyczy)%0AKiedy%20potrzebna%20pomoc%3A%20"
            target="_blank" rel="noopener">
           💬 Otwórz WhatsApp
         </a>
 
         <div class="note">
           <strong>Co napisać?</strong><br>
-          Lokalizacja • marka/model • problem • czy auto odpala.
+          Lokalizacja • marka/model • typ pojazdu • problem • czy auto odpala • dokąd transport • kiedy potrzebna pomoc
         </div>
       </div>
 
+      <!-- TELEFON / SMS -->
       <div class="card">
         <h2>Telefon / SMS</h2>
+        <p class="muted">
+          Możesz zadzwonić lub wysłać SMS. Jeśli nie możesz dzwonić — WhatsApp będzie najszybszy.
+        </p>
+
         <div class="contactbox">
           <div class="contactbox__line">
             <span class="muted">Numer:</span>
@@ -74,9 +97,26 @@
           </div>
 
           <p class="muted" style="margin-top:12px;">
-            (Jeśli dzwonienie nie działa na komputerze, użyj WhatsApp lub SMS.)
+            (Jeśli połączenie nie działa na komputerze, użyj WhatsApp lub SMS.)
           </p>
         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONFIANCE -->
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <h3>Dlaczego my?</h3>
+        <ul class="list">
+          <li>Wycena przed usługą — bez niespodzianek</li>
+          <li>Działamy 7 dni w tygodniu</li>
+          <li>Szybka odpowiedź na WhatsApp</li>
+          <li>Île-de-France + transport na terenie całej Francji</li>
+          <li>Bezpieczny załadunek i transport pojazdu</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -86,7 +126,9 @@
   <div class="container footer__row">
     <div>
       <strong>Pomoc Drogowa Paryż</strong>
-      <div class="muted">Île-de-France • Transport aut: cała Francja</div>
+      <div class="muted">
+        Pomoc drogowa i transport samochodów — Île-de-France i cała Francja • WhatsApp / Telefon
+      </div>
     </div>
     <div class="footer__right">
       <div class="muted">Tel/WhatsApp: +33 7 59 55 72 33</div>
