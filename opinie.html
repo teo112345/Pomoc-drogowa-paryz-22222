@@ -21,26 +21,33 @@
 
 <header class="topbar">
   <div class="container topbar__row">
-    <a class="brand" href="index.html">
-      <div class="brand__logo">
-        <img src="assets/img/logo.png" alt="Pomoc Drogowa Paryż" width="48" height="48">
+    <a class="brand" href="index.html" aria-label="Pomoc Drogowa Paryż">
+      <div class="brand__logo" aria-hidden="true">
+        <img src="assets/img/logo.PNG"
+             alt="Pomoc Drogowa Paryż"
+             width="48"
+             height="48"
+             loading="eager">
+        <span class="brand__fallback">PD</span>
       </div>
       <div class="brand__text">
         <strong>Pomoc Drogowa Paryż</strong>
-        <span>Île-de-France • Cała Francja</span>
+        <span>Île-de-France • Transport w całej Francji</span>
       </div>
     </a>
-
-    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
-      <span></span><span></span><span></span>
+    <!-- MENU MOBILE -->
+    <button class="menu-btn"
+            aria-label="Menu"
+            aria-expanded="false"
+            aria-controls="primary-nav">
+      ☰
     </button>
-
     <nav class="nav" id="primary-nav">
-      <a class="nav__link" href="index.html">O nas</a>
-      <a class="nav__link" href="localisation.html">Lokalizacja</a>
-      <a class="nav__link" href="contact.html">Kontakt</a>
-      <a class="nav__link nav__link--active" href="opinie.html">Opinie</a>
-    </nav>
+  <a class="nav__link" href="index.html">O nas</a>
+  <a class="nav__link" href="localisation.html">Lokalizacja</a>
+  <a class="nav__link" href="opinie.html">Opinie</a>
+  <a class="nav__link nav__cta" href="contact.html">Kontakt</a>
+</nav>
   </div>
 </header>
 
